@@ -1,0 +1,49 @@
+<project
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.modafocas</groupId>
+  <artifactId>modafocas-parent</artifactId>
+  <packaging>pom</packaging>
+  <version>1</version>
+  <name>modafocas.org :; parent-pom</name>
+  <description>Parent pom for Modafocas-hosted stuff</description>
+  <url>http://modafocas.org/</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <distributionManagement>
+    <repository>
+      <id>modafocas-release</id>
+      <url>http://repo.modafocas.org/nexus/content/repositories/modafocas-release</url>
+    </repository>
+    <snapshotRepository>
+      <id>modafocas-snapshot</id>
+      <url>http://repo.modafocas.org/nexus/content/repositories/modafocas-snapshot</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+  <scm>
+    <connection>scm:hg:http://hg.modafocas.org/modafocas-parent</connection>
+    <developerConnection>http://hg.modafocas.org/modafocas-parent</developerConnection>
+  </scm>
+
+  <issueManagement>
+    <system>bitbucket</system>
+    <url>http://hg.modafocas.org/modafocas-parent/issues</url>
+  </issueManagement>
+
+  <repositories>
+    <repository>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <id>modafocas-public</id>
+      <name>modafocas public repository</name>
+      <url>http://repo.modafocas.org/nexus/content/groups/modafocas-public</url>
+    </repository>
+  </repositories>
+</project>
