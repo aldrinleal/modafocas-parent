@@ -7,7 +7,7 @@
   <artifactId>modafocas-parent</artifactId>
   <packaging>pom</packaging>
   <version>1</version>
-  <name>modafocas.org :; parent-pom</name>
+  <name>modafocas.org :: parent-pom</name>
   <description>Parent pom for Modafocas-hosted stuff</description>
   <url>http://modafocas.org/</url>
 
