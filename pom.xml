@@ -15,6 +15,29 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
+  <repositories>
+    <repository>
+      <id>modafocas-public</id>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <url>http://repo.modafocas.org/nexus/content/repositories/modafocas-public/</url>
+    </repository>
+    <pluginRepositories>
+      <id>modafocas-public</id>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <url>http://repo.modafocas.org/nexus/content/repositories/modafocas-public/</url>
+    </pluginRepositories>
+  </repositories>
+
   <distributionManagement>
     <repository>
       <id>modafocas-release</id>
@@ -27,13 +50,13 @@
   </distributionManagement>
 
   <scm>
-    <connection>scm:hg:http://hg.modafocas.org/${project.name}</connection>
-    <developerConnection>http://hg.modafocas.org/${project.name}</developerConnection>
+    <connection>scm:hg:http://hg.modafocas.org/${project.artifactId}</connection>
+    <developerConnection>http://hg.modafocas.org/${project.artifactId}</developerConnection>
   </scm>
 
   <issueManagement>
     <system>bitbucket</system>
-    <url>http://hg.modafocas.org/${project.name}/issues</url>
+    <url>http://hg.modafocas.org/${project.artifactId}/issues</url>
   </issueManagement>
 
   <repositories>
