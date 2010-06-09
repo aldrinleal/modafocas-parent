@@ -27,9 +27,9 @@
       <url>http://repo.modafocas.org/nexus/content/repositories/modafocas-public/</url>
     </repository>
   </repositories>
-  
+
   <pluginRepositories>
-    <pluginRepositories>
+    <pluginRepository>
       <id>modafocas-public</id>
       <releases>
         <enabled>true</enabled>
@@ -38,7 +38,7 @@
         <enabled>true</enabled>
       </snapshots>
       <url>http://repo.modafocas.org/nexus/content/repositories/modafocas-public/</url>
-    </pluginRepositories>
+    </pluginRepository>
   </pluginRepositories>
 
   <distributionManagement>
