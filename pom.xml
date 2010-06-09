@@ -24,7 +24,7 @@
       <snapshots>
         <enabled>true</enabled>
       </snapshots>
-      <url>http://repo.modafocas.org/nexus/content/repositories/modafocas-public/</url>
+      <url>http://repo.modafocas.org/nexus/content/repositories/modafocas-public</url>
     </repository>
   </repositories>
 
@@ -37,7 +37,7 @@
       <snapshots>
         <enabled>true</enabled>
       </snapshots>
-      <url>http://repo.modafocas.org/nexus/content/repositories/modafocas-public/</url>
+      <url>http://repo.modafocas.org/nexus/content/repositories/modafocas-public</url>
     </pluginRepository>
   </pluginRepositories>
 
@@ -61,15 +61,4 @@
     <system>bitbucket</system>
     <url>http://hg.modafocas.org/${project.artifactId}/issues</url>
   </issueManagement>
-
-  <repositories>
-    <repository>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-      <id>modafocas-public</id>
-      <name>modafocas public repository</name>
-      <url>http://repo.modafocas.org/nexus/content/groups/modafocas-public</url>
-    </repository>
-  </repositories>
 </project>
