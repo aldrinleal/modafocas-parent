@@ -27,13 +27,13 @@
   </distributionManagement>
 
   <scm>
-    <connection>scm:hg:http://hg.modafocas.org/modafocas-parent</connection>
-    <developerConnection>http://hg.modafocas.org/modafocas-parent</developerConnection>
+    <connection>scm:hg:http://hg.modafocas.org/${project.name}</connection>
+    <developerConnection>http://hg.modafocas.org/${project.name}</developerConnection>
   </scm>
 
   <issueManagement>
     <system>bitbucket</system>
-    <url>http://hg.modafocas.org/modafocas-parent/issues</url>
+    <url>http://hg.modafocas.org/${project.name}/issues</url>
   </issueManagement>
 
   <repositories>
