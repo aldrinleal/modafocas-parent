@@ -92,12 +92,6 @@
         <scope>provided</scope>
       </dependency>
       <dependency>
-        <groupId>org.slf4j</groupId>
-        <artifactId>slf4j-api</artifactId>
-        <version>${slf4j.version}</version>
-      </dependency>
-
-      <dependency>
         <groupId>com.google.appengine</groupId>
         <artifactId>geronimo-jpa_3.0_spec</artifactId>
         <version>1.1.1</version>
@@ -169,9 +163,29 @@
         <version>2.5</version>
       </dependency>
       <dependency>
-      	<groupId>org.modafocas</groupId>
-      	<artifactId>guice-tagonist</artifactId>
-      	<version>1.0</version>
+        <groupId>org.modafocas</groupId>
+        <artifactId>guice-tagonist</artifactId>
+        <version>1.0</version>
+      </dependency>
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>${slf4j.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-jdk14</artifactId>
+        <version>${slf4j.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>jcl-over-slf4j</artifactId>
+        <version>${slf4j.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>log4j-over-slf4j</artifactId>
+        <version>${slf4j.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
