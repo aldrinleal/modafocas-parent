@@ -6,13 +6,16 @@
   <groupId>org.modafocas</groupId>
   <artifactId>modafocas-parent</artifactId>
   <packaging>pom</packaging>
-  <version>1</version>
+  <version>2</version>
   <name>modafocas.org :: parent-pom</name>
   <description>Parent pom for Modafocas-hosted stuff</description>
   <url>http://modafocas.org/</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <slf4j.version>1.6.0</slf4j.version>
+    <guice.version>2.0-modafocas</guice.version>
+    <gae.version>1.3.4</gae.version>
   </properties>
 
   <repositories>
@@ -61,4 +64,129 @@
     <system>bitbucket</system>
     <url>http://hg.modafocas.org/${project.artifactId}/issues</url>
   </issueManagement>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>commons-beanutils</groupId>
+        <artifactId>commons-beanutils-core</artifactId>
+        <version>1.8.3</version>
+        <scope>compile</scope>
+        <exclusions>
+          <exclusion>
+            <artifactId>commons-logging</artifactId>
+            <groupId>commons-logging</groupId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.geronimo.specs</groupId>
+        <artifactId>geronimo-jsp_2.1_spec</artifactId>
+        <version>1.0.1</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.geronimo.specs</groupId>
+        <artifactId>geronimo-servlet_2.5_spec</artifactId>
+        <version>1.2</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>${slf4j.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.google.appengine</groupId>
+        <artifactId>geronimo-jpa_3.0_spec</artifactId>
+        <version>1.1.1</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.appengine</groupId>
+        <artifactId>appengine-api-1.0-sdk</artifactId>
+        <version>${gae.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>taglibs</groupId>
+        <artifactId>standard</artifactId>
+        <version>1.1.2</version>
+        <scope>runtime</scope>
+      </dependency>
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.5</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.google.appengine</groupId>
+        <artifactId>appengine-api-labs</artifactId>
+        <version>${gae.version}</version>
+        <scope>compile</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.google.appengine</groupId>
+        <artifactId>appengine-api-stubs</artifactId>
+        <version>${gae.version}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.google.appengine</groupId>
+        <artifactId>appengine-testing</artifactId>
+        <version>${gae.version}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.google.code.guice</groupId>
+        <artifactId>guice</artifactId>
+        <version>${guice.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.code.guice</groupId>
+        <artifactId>guice-servlet</artifactId>
+        <version>${guice.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>commons-codec</groupId>
+        <artifactId>commons-codec</artifactId>
+        <version>1.4</version>
+      </dependency>
+      <dependency>
+        <groupId>com.googlecode.objectify</groupId>
+        <artifactId>objectify</artifactId>
+        <version>2.2</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.appengine</groupId>
+        <artifactId>appengine-tools-api</artifactId>
+        <version>${gae.version}</version>
+        <scope>provided</scope>
+      </dependency>
+      <dependency>
+        <groupId>commons-lang</groupId>
+        <artifactId>commons-lang</artifactId>
+        <version>2.5</version>
+      </dependency>
+      <dependency>
+      	<groupId>org.modafocas</groupId>
+      	<artifactId>guice-tagonist</artifactId>
+      	<version>1.0</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <!-- http://maven.apache.org/plugins/maven-compiler-plugin/ -->
+          <source>1.6</source>
+          <target>1.6</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 </project>
