@@ -19,6 +19,16 @@
 
   <repositories>
     <repository>
+      <id>modafocas-central</id>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <url>http://repo.modafocas.org/nexus/content/repositories/public</url>
+    </repository>
+    <repository>
       <id>modafocas-public</id>
       <releases>
         <enabled>true</enabled>
@@ -31,6 +41,16 @@
   </repositories>
 
   <pluginRepositories>
+    <pluginRepository>
+      <id>modafocas-central</id>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <url>http://repo.modafocas.org/nexus/content/repositories/public</url>
+    </pluginRepository>
     <pluginRepository>
       <id>modafocas-public</id>
       <releases>
